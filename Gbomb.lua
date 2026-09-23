@@ -112,14 +112,14 @@ local function CountVisualGoldBombs()
 
     if Player.Backpack then
         for _, item in ipairs(Player.Backpack:GetChildren())do
-            if item:IsA('Tool') and item.Name == 'GoldBomb (Visual)' then
+            if item:IsA('Tool') and item.Name == 'GoldBomb' then
                 count += 1
             end
         end
     end
     if Player.Character then
         for _, item in ipairs(Player.Character:GetChildren())do
-            if item:IsA('Tool') and item.Name == 'GoldBomb (Visual)' then
+            if item:IsA('Tool') and item.Name == 'GoldBomb' then
                 count += 1
             end
         end
