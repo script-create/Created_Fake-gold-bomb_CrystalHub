@@ -1,4 +1,4 @@
--- created by CrystalHub owner
+-- CrystalHub Fake Gold Bomb
 local Players = game:GetService("Players")
 local Workspace = game:GetService("Workspace")
 local Debris = game:GetService("Debris")
@@ -11,8 +11,10 @@ local function BuildGoldenBomb()
     local Main = Instance.new('Part')
 
     Main.Name = 'VisualGoldDrop'
-    Main.Size = _v3_new(1.65, 0.9, 1.3)
+    Main.Size = _v3_new(1.35, 1.15, 1.35) -- жёлтая форма, почти квадрат
     Main.Transparency = 0
+    Main.Color = Color3.fromRGB(255, 210, 0)
+    Main.Material = Enum.Material.SmoothPlastic
     Main.CanCollide = true
 
     local Mesh = Instance.new('SpecialMesh')
@@ -112,14 +114,14 @@ local function CountVisualGoldBombs()
 
     if Player.Backpack then
         for _, item in ipairs(Player.Backpack:GetChildren())do
-            if item:IsA('Tool') and item.Name == 'GoldBomb' then
+            if item:IsA('Tool') and item.Name == 'GoldBomb (Visual)' then
                 count += 1
             end
         end
     end
     if Player.Character then
         for _, item in ipairs(Player.Character:GetChildren())do
-            if item:IsA('Tool') and item.Name == 'GoldBomb' then
+            if item:IsA('Tool') and item.Name == 'GoldBomb (Visual)' then
                 count += 1
             end
         end
