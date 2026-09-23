@@ -11,7 +11,7 @@ local function BuildGoldenBomb()
     local Main = Instance.new('Part')
 
     Main.Name = 'VisualGoldDrop'
-    Main.Size = _v3_new(1.35, 1.15, 1.35) -- жёлтая форма, почти квадрат
+    Main.Size = _v3_new(1.35, 1.15, 1.35)
     Main.Transparency = 0
     Main.Color = Color3.fromRGB(255, 210, 0)
     Main.Material = Enum.Material.SmoothPlastic
